@@ -15,6 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                // TODO: - change to use custom icons. you can download them from figma
                 Section(header: Text("Account").font(.title2).bold()) {
                     NavigationLink(destination: Text("Notification Setting")) {
                         Label("Notification Setting", systemImage: "bell")
@@ -56,6 +57,7 @@ struct ContentView: View {
                     
                 }
                 ToolbarItem(placement: .navigationBarLeading) {
+                    // TODO: - add some leading padding to back circle button. check the figma desgin
                     Button(action: {
                         // Back button action
                     }) {
@@ -69,6 +71,7 @@ struct ContentView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
+                    // TODO: - Don't use system icon 'lock'. Please use the custom icon from figma. Download and import it to Assets folder
                     Button(action: {
                         // Lock button action
                     }) {
